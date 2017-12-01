@@ -45,7 +45,7 @@
 		0522FC3C1FCF4AEF007FF5D2 /* TableDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableDatasource.swift; sourceTree = "<group>"; };
 		05BAC2BE1FD1306600CB9C22 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
 		05BAC2C01FD1316400CB9C22 /* UIWindow+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIWindow+Extensions.swift"; sourceTree = "<group>"; };
-		05BAC2C31FD153C100CB9C22 /* TriviaTime.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = TriviaTime.md; sourceTree = SOURCE_ROOT; };
+		05BAC2C31FD153C100CB9C22 /* Readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = SOURCE_ROOT; };
 		05DEC3281FCEDCEA001EC6CC /* TriviaTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TriviaTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05DEC32B1FCEDCEA001EC6CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		05DEC32D1FCEDCEA001EC6CC /* TriviaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriviaViewController.swift; sourceTree = "<group>"; };
@@ -131,7 +131,7 @@
 				05DEC3321FCEDCEB001EC6CC /* Assets.xcassets */,
 				05DEC3341FCEDCEB001EC6CC /* LaunchScreen.storyboard */,
 				05DEC3371FCEDCEB001EC6CC /* Info.plist */,
-				05BAC2C31FD153C100CB9C22 /* TriviaTime.md */,
+				05BAC2C31FD153C100CB9C22 /* Readme.md */,
 			);
 			path = TriviaTime;
 			sourceTree = "<group>";
