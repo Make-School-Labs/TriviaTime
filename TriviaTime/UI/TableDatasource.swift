@@ -9,11 +9,14 @@
 import Foundation
 import UIKit
 
-class TriviaQuestionDatasource: NSObject, UITableViewDataSource {
+typealias TableCellCallback = (UITableView, IndexPath) -> UITableViewCell
+
+class TableDatasource<Item>: NSObject, UITableViewDataSource {
+    var items: [Item]
     
-    let items: [String]
+    var configureCell: TableCellCallback?
     
-    init(items: [String]) {
+    init(items: [Item]) {
         self.items = items
     }
     
@@ -27,11 +30,10 @@ class TriviaQuestionDatasource: NSObject, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "QuestionCell")!
+        guard let configureCell = configureCell else {
+            precondition(false, "You did pass a configuration closure to configureCell, you must do so")
+        }
         
-        cell.textLabel?.text = items[indexPath.row]
-        cell.textLabel?.numberOfLines = 0
-
-        return cell
+        return configureCell(tableView, indexPath)
     }
 }

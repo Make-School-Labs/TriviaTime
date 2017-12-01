@@ -32,21 +32,20 @@ enum TriviaChoiceResult {
 }
 
 struct TriviaController {
-    let req = APIClient()
-    let realmManager = RealmManager()
     private let trivia: JSONTrivia
     
     init(trivia: JSONTrivia) {
         self.trivia = trivia
     }
     
-    func refresh(completion: @escaping (_ question: String, _ answer: String, _ choices: [String]) -> Void) {
+    static func refresh(completion: @escaping (TriviaController) -> Void) {
+        let req = APIClient()
         
         req.perform(target: Target.getTrivia(amount: "1")) { (result) in
             
             guard let result = result.first else {return}
-
-            completion(result.question, result.answer, result.incorrectAnswers)
+            
+            completion(TriviaController(trivia: result))
         }
     }
     
@@ -66,15 +65,4 @@ struct TriviaController {
     func question() -> String {
         return trivia.question.removingPercentEncoding!
     }
-    
-    func saveHistory(question: String, result: Bool) {
-        let answered = AnsweredTrivia()
-        answered.question = question
-        answered.result = result
-        
-        try! realmManager.realm.write {
-            realmManager.realm.add(answered)
-        }
-    }
-    
 }

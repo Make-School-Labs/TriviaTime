@@ -8,9 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0522FC3B1FCEEDD3007FF5D2 /* TriviaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0522FC3A1FCEEDD3007FF5D2 /* TriviaController.swift */; };
-		0522FC3D1FCF4AEF007FF5D2 /* TriviaQuestionDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0522FC3C1FCF4AEF007FF5D2 /* TriviaQuestionDatasource.swift */; };
-		0522FC431FCF4BF8007FF5D2 /* ChoiceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0522FC411FCF4BF8007FF5D2 /* ChoiceCell.swift */; };
-		0522FC441FCF4BF8007FF5D2 /* ChoiceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0522FC421FCF4BF8007FF5D2 /* ChoiceCell.xib */; };
+		0522FC3D1FCF4AEF007FF5D2 /* TableDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0522FC3C1FCF4AEF007FF5D2 /* TableDatasource.swift */; };
 		05BAC2BF1FD1306600CB9C22 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BAC2BE1FD1306600CB9C22 /* UIColor+Extensions.swift */; };
 		05BAC2C11FD1316400CB9C22 /* UIWindow+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BAC2C01FD1316400CB9C22 /* UIWindow+Extensions.swift */; };
 		05DEC32C1FCEDCEA001EC6CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05DEC32B1FCEDCEA001EC6CC /* AppDelegate.swift */; };
@@ -25,8 +23,6 @@
 		05DEC3491FCEDE3A001EC6CC /* JSONTrivia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05DEC3481FCEDE3A001EC6CC /* JSONTrivia.swift */; };
 		05DEC34B1FCEDF3A001EC6CC /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05DEC34A1FCEDF3A001EC6CC /* APIClient.swift */; };
 		05DEC34D1FCEE9F0001EC6CC /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05DEC34C1FCEE9F0001EC6CC /* HistoryViewController.swift */; };
-		05DEC3501FCEEAEF001EC6CC /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05DEC34F1FCEEAEF001EC6CC /* RealmManager.swift */; };
-		05DEC3531FCEEB59001EC6CC /* Trivia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05DEC3521FCEEB59001EC6CC /* Trivia.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -46,9 +42,7 @@
 
 /* Begin PBXFileReference section */
 		0522FC3A1FCEEDD3007FF5D2 /* TriviaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriviaController.swift; sourceTree = "<group>"; };
-		0522FC3C1FCF4AEF007FF5D2 /* TriviaQuestionDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriviaQuestionDatasource.swift; sourceTree = "<group>"; };
-		0522FC411FCF4BF8007FF5D2 /* ChoiceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoiceCell.swift; sourceTree = "<group>"; };
-		0522FC421FCF4BF8007FF5D2 /* ChoiceCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChoiceCell.xib; sourceTree = "<group>"; };
+		0522FC3C1FCF4AEF007FF5D2 /* TableDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableDatasource.swift; sourceTree = "<group>"; };
 		05BAC2BE1FD1306600CB9C22 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
 		05BAC2C01FD1316400CB9C22 /* UIWindow+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIWindow+Extensions.swift"; sourceTree = "<group>"; };
 		05DEC3281FCEDCEA001EC6CC /* TriviaTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TriviaTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -63,8 +57,6 @@
 		05DEC3481FCEDE3A001EC6CC /* JSONTrivia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONTrivia.swift; sourceTree = "<group>"; };
 		05DEC34A1FCEDF3A001EC6CC /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		05DEC34C1FCEE9F0001EC6CC /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
-		05DEC34F1FCEEAEF001EC6CC /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
-		05DEC3521FCEEB59001EC6CC /* Trivia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trivia.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,18 +75,11 @@
 		0522FC3F1FCF4BDA007FF5D2 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				0522FC401FCF4BE4007FF5D2 /* Cells */,
+				0522FC3A1FCEEDD3007FF5D2 /* TriviaController.swift */,
+				0522FC3C1FCF4AEF007FF5D2 /* TableDatasource.swift */,
+				05BAC2C21FD1440A00CB9C22 /* ViewControllers */,
 			);
 			path = UI;
-			sourceTree = "<group>";
-		};
-		0522FC401FCF4BE4007FF5D2 /* Cells */ = {
-			isa = PBXGroup;
-			children = (
-				0522FC411FCF4BF8007FF5D2 /* ChoiceCell.swift */,
-				0522FC421FCF4BF8007FF5D2 /* ChoiceCell.xib */,
-			);
-			path = Cells;
 			sourceTree = "<group>";
 		};
 		05BAC2BD1FD1305A00CB9C22 /* Extensions */ = {
@@ -104,6 +89,15 @@
 				05BAC2C01FD1316400CB9C22 /* UIWindow+Extensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		05BAC2C21FD1440A00CB9C22 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				05DEC34C1FCEE9F0001EC6CC /* HistoryViewController.swift */,
+				05DEC32D1FCEDCEA001EC6CC /* TriviaViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 		05DEC31F1FCEDCEA001EC6CC = {
@@ -132,14 +126,10 @@
 				05DEC34E1FCEEACE001EC6CC /* Persistence */,
 				05DEC3451FCEDE20001EC6CC /* Networking */,
 				05DEC32B1FCEDCEA001EC6CC /* AppDelegate.swift */,
-				05DEC34C1FCEE9F0001EC6CC /* HistoryViewController.swift */,
-				05DEC32D1FCEDCEA001EC6CC /* TriviaViewController.swift */,
-				0522FC3A1FCEEDD3007FF5D2 /* TriviaController.swift */,
 				05DEC32F1FCEDCEB001EC6CC /* Main.storyboard */,
 				05DEC3321FCEDCEB001EC6CC /* Assets.xcassets */,
 				05DEC3341FCEDCEB001EC6CC /* LaunchScreen.storyboard */,
 				05DEC3371FCEDCEB001EC6CC /* Info.plist */,
-				0522FC3C1FCF4AEF007FF5D2 /* TriviaQuestionDatasource.swift */,
 			);
 			path = TriviaTime;
 			sourceTree = "<group>";
@@ -173,7 +163,6 @@
 			isa = PBXGroup;
 			children = (
 				05DEC3511FCEEB49001EC6CC /* Models */,
-				05DEC34F1FCEEAEF001EC6CC /* RealmManager.swift */,
 			);
 			path = Persistence;
 			sourceTree = "<group>";
@@ -181,7 +170,6 @@
 		05DEC3511FCEEB49001EC6CC /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				05DEC3521FCEEB59001EC6CC /* Trivia.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -248,7 +236,6 @@
 			files = (
 				05DEC3361FCEDCEB001EC6CC /* LaunchScreen.storyboard in Resources */,
 				05DEC3331FCEDCEB001EC6CC /* Assets.xcassets in Resources */,
-				0522FC441FCF4BF8007FF5D2 /* ChoiceCell.xib in Resources */,
 				05DEC3311FCEDCEB001EC6CC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -260,18 +247,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0522FC3D1FCF4AEF007FF5D2 /* TriviaQuestionDatasource.swift in Sources */,
+				0522FC3D1FCF4AEF007FF5D2 /* TableDatasource.swift in Sources */,
 				05DEC32E1FCEDCEA001EC6CC /* TriviaViewController.swift in Sources */,
 				05DEC3491FCEDE3A001EC6CC /* JSONTrivia.swift in Sources */,
 				05DEC32C1FCEDCEA001EC6CC /* AppDelegate.swift in Sources */,
-				0522FC431FCF4BF8007FF5D2 /* ChoiceCell.swift in Sources */,
 				05DEC34D1FCEE9F0001EC6CC /* HistoryViewController.swift in Sources */,
 				05BAC2C11FD1316400CB9C22 /* UIWindow+Extensions.swift in Sources */,
 				0522FC3B1FCEEDD3007FF5D2 /* TriviaController.swift in Sources */,
-				05DEC3531FCEEB59001EC6CC /* Trivia.swift in Sources */,
 				05BAC2BF1FD1306600CB9C22 /* UIColor+Extensions.swift in Sources */,
 				05DEC34B1FCEDF3A001EC6CC /* APIClient.swift in Sources */,
-				05DEC3501FCEEAEF001EC6CC /* RealmManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
