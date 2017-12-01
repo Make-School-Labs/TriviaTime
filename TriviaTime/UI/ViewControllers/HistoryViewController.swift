@@ -38,7 +38,7 @@ class HistoryViewController: UIViewController {
         
         dataSource.configureCell = { (tableView, indexPath) -> UITableViewCell in
             let cell = tableView.dequeueReusableCell(withIdentifier: "HistoryCell")!
-            
+        
             //TODO: Fill me in with history details
             
             return cell

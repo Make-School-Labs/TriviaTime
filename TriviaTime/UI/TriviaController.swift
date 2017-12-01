@@ -50,7 +50,7 @@ struct TriviaController {
     }
     
     func validateChoice(choice: String) -> TriviaChoiceResult {
-        guard choice == trivia.answer else {
+        guard choice == trivia.answer.removingPercentEncoding! else {
             return .wrong(answer: trivia.answer)
         }
         
