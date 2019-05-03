@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import RealmSwift
 
 
 /// Displays a history of all answered trivia questions from Realm
@@ -30,8 +29,8 @@ class HistoryViewController: UIViewController {
             .setBackgroundImage(UIImage(), for: .default)
         
         self.navigationController?.navigationBar.largeTitleTextAttributes = [
-            NSAttributedStringKey.font: UIFont.systemFont(ofSize: 30, weight: .black),
-            NSAttributedStringKey.foregroundColor: UIColor.white
+            NSAttributedString.Key.font: UIFont.systemFont(ofSize: 30, weight: .black),
+            NSAttributedString.Key.foregroundColor: UIColor.white
         ]
         
         tableView.dataSource = dataSource

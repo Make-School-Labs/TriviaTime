@@ -16,10 +16,6 @@
 		05DEC3311FCEDCEB001EC6CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05DEC32F1FCEDCEB001EC6CC /* Main.storyboard */; };
 		05DEC3331FCEDCEB001EC6CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05DEC3321FCEDCEB001EC6CC /* Assets.xcassets */; };
 		05DEC3361FCEDCEB001EC6CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05DEC3341FCEDCEB001EC6CC /* LaunchScreen.storyboard */; };
-		05DEC33F1FCEDD96001EC6CC /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05DEC33D1FCEDD95001EC6CC /* Realm.framework */; };
-		05DEC3401FCEDD96001EC6CC /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 05DEC33D1FCEDD95001EC6CC /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		05DEC3411FCEDD96001EC6CC /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05DEC33E1FCEDD95001EC6CC /* RealmSwift.framework */; };
-		05DEC3421FCEDD96001EC6CC /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 05DEC33E1FCEDD95001EC6CC /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		05DEC3491FCEDE3A001EC6CC /* JSONTrivia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05DEC3481FCEDE3A001EC6CC /* JSONTrivia.swift */; };
 		05DEC34B1FCEDF3A001EC6CC /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05DEC34A1FCEDF3A001EC6CC /* APIClient.swift */; };
 		05DEC34D1FCEE9F0001EC6CC /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05DEC34C1FCEE9F0001EC6CC /* HistoryViewController.swift */; };
@@ -32,8 +28,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				05DEC3421FCEDD96001EC6CC /* RealmSwift.framework in Embed Frameworks */,
-				05DEC3401FCEDD96001EC6CC /* Realm.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -53,8 +47,6 @@
 		05DEC3321FCEDCEB001EC6CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		05DEC3351FCEDCEB001EC6CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		05DEC3371FCEDCEB001EC6CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		05DEC33D1FCEDD95001EC6CC /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
-		05DEC33E1FCEDD95001EC6CC /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = "<group>"; };
 		05DEC3481FCEDE3A001EC6CC /* JSONTrivia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONTrivia.swift; sourceTree = "<group>"; };
 		05DEC34A1FCEDF3A001EC6CC /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		05DEC34C1FCEE9F0001EC6CC /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
@@ -65,8 +57,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				05DEC3411FCEDD96001EC6CC /* RealmSwift.framework in Frameworks */,
-				05DEC33F1FCEDD96001EC6CC /* Realm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,8 +94,6 @@
 		05DEC31F1FCEDCEA001EC6CC = {
 			isa = PBXGroup;
 			children = (
-				05DEC33D1FCEDD95001EC6CC /* Realm.framework */,
-				05DEC33E1FCEDD95001EC6CC /* RealmSwift.framework */,
 				05DEC32A1FCEDCEA001EC6CC /* TriviaTime */,
 				05DEC3291FCEDCEA001EC6CC /* Products */,
 			);
@@ -124,7 +112,6 @@
 			children = (
 				05BAC2BD1FD1305A00CB9C22 /* Extensions */,
 				0522FC3F1FCF4BDA007FF5D2 /* UI */,
-				05DEC34E1FCEEACE001EC6CC /* Persistence */,
 				05DEC3451FCEDE20001EC6CC /* Networking */,
 				05DEC32B1FCEDCEA001EC6CC /* AppDelegate.swift */,
 				05DEC32F1FCEDCEB001EC6CC /* Main.storyboard */,
@@ -161,21 +148,6 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		05DEC34E1FCEEACE001EC6CC /* Persistence */ = {
-			isa = PBXGroup;
-			children = (
-				05DEC3511FCEEB49001EC6CC /* Models */,
-			);
-			path = Persistence;
-			sourceTree = "<group>";
-		};
-		05DEC3511FCEEB49001EC6CC /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -204,11 +176,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0910;
-				LastUpgradeCheck = 0910;
+				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Eliel Gordon";
 				TargetAttributes = {
 					05DEC3271FCEDCEA001EC6CC = {
 						CreatedOnToolsVersion = 9.1;
+						LastSwiftMigration = 1010;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -297,6 +270,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -304,6 +278,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -354,6 +329,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -361,6 +337,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -402,9 +379,9 @@
 				);
 				INFOPLIST_FILE = TriviaTime/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.gordoneliel.TriviaTime;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gordoneliel.TriviaTime.MS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -421,9 +398,9 @@
 				);
 				INFOPLIST_FILE = TriviaTime/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.gordoneliel.TriviaTime;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gordoneliel.TriviaTime.MS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
